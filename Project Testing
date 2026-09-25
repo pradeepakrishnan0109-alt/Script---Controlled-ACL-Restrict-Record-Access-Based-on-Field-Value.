@@ -1,0 +1,75 @@
+# Phase 6 – Project Testing
+
+## Project Title
+
+**Script-Controlled ACL – Restrict Record Access Based on Field Value**
+
+## 1. Testing Objective
+
+The objective of testing is to verify that the Script-Controlled ACL correctly allows authorized users to access records and prevents unauthorized users from accessing restricted records.
+
+## 2. Test Scenarios
+
+### Test Case 1 – Authorized User
+
+**Condition:** User's department matches the record's department.
+
+**Expected Result:** Access should be allowed.
+
+**Status:** Pass
+
+### Test Case 2 – Unauthorized User
+
+**Condition:** User's department does not match the record's department.
+
+**Expected Result:** Access should be denied.
+
+**Status:** Pass
+
+### Test Case 3 – Different Department
+
+**Condition:** A Finance user attempts to access an HR record.
+
+**Expected Result:** Access should be denied.
+
+**Status:** Pass
+
+### Test Case 4 – Matching Department
+
+**Condition:** An HR user attempts to access an HR record.
+
+**Expected Result:** Access should be allowed.
+
+**Status:** Pass
+
+## 3. Test Results
+
+| Test Case | User         | Record Field | Expected Result | Actual Result | Status |
+| --------- | ------------ | ------------ | --------------- | ------------- | ------ |
+| TC01      | HR User      | HR           | Allow           | Allow         | Pass   |
+| TC02      | Finance User | HR           | Deny            | Deny          | Pass   |
+| TC03      | IT User      | Finance      | Deny            | Deny          | Pass   |
+| TC04      | Finance User | Finance      | Allow           | Allow         | Pass   |
+
+## 4. Security Testing
+
+The ACL was tested with users having different authorization levels. The testing verified that unauthorized users cannot access records that are restricted based on the configured field value.
+
+## 5. Error Handling
+
+If a user does not satisfy the required access condition, the system prevents access to the restricted record instead of allowing unauthorized access.
+
+## 6. Testing Outcome
+
+The testing confirms that the Script-Controlled ACL can control record access based on field values. Authorized users are able to access the appropriate records, while unauthorized users are restricted.
+
+## 7. Evidence
+
+The following screenshots should be added as testing evidence:
+
+* ACL configuration
+* Script configuration
+* Authorized user accessing a record
+* Unauthorized user attempting to access a record
+* Access denied/result screen
+* Test result table
