@@ -1,0 +1,35 @@
+# Phase 1 – Brainstorming & Ideation
+
+## Project Title
+
+**Script-Controlled ACL – Restrict Record Access Based on Field Value**
+
+## Problem Statement
+
+In an organization, different users may need access to different records based on their department, role, or other field values. Giving all users access to every record can create security and privacy issues.
+
+## Proposed Solution
+
+The proposed solution is to use a **Script-Controlled Access Control List (ACL)** to restrict record access based on a specific field value. The script checks the field value of a record and determines whether the current user is allowed to access the record.
+
+## Objective
+
+The main objective of this project is to provide secure and controlled access to records based on predefined field values.
+
+## Key Idea
+
+The system will:
+
+1. Identify the field value of a record.
+2. Identify the current user.
+3. Compare the user's details with the record's field value.
+4. Allow access when the condition is satisfied.
+5. Restrict access when the condition is not satisfied.
+
+## Example
+
+If a record has **Department = HR**, only authorized HR users should be able to access that record. Users from other departments should not be allowed to access it.
+
+## Expected Outcome
+
+The project will improve record-level security by ensuring that users can access only the records they are authorized to view based on the specified field value.
