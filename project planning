@@ -1,0 +1,96 @@
+# Phase 4 – Project Planning
+
+## Project Title
+
+**Script-Controlled ACL – Restrict Record Access Based on Field Value**
+
+## 1. Project Goal
+
+The goal of this project is to develop a script-controlled ACL that restricts record access based on a specific field value and the user's authorization.
+
+## 2. Team Structure
+
+| Role                 | Responsibility                                |
+| -------------------- | --------------------------------------------- |
+| Team Leader          | Coordinate the project and track progress     |
+| Developer            | Develop the ACL and access-control script     |
+| Tester               | Test authorized and unauthorized access       |
+| Documentation Member | Prepare project documents and screenshots     |
+| Presentation Member  | Prepare and present the project demonstration |
+
+*Team members can share multiple responsibilities depending on the team size.*
+
+## 3. Project Tasks
+
+### Task 1 – Understand the Problem
+
+Study the requirement and identify the record-access problem.
+
+### Task 2 – Requirement Analysis
+
+Identify users, records, field values, and access conditions.
+
+### Task 3 – System Design
+
+Design the ACL workflow and access-control logic.
+
+### Task 4 – ACL Development
+
+Create and configure the required ACL.
+
+### Task 5 – Script Development
+
+Develop the script to validate the field value and user authorization.
+
+### Task 6 – Testing
+
+Test the system with authorized and unauthorized users.
+
+### Task 7 – Documentation
+
+Prepare screenshots, explanations, test results, and project documentation.
+
+### Task 8 – Demonstration
+
+Record a video demonstrating the complete working process.
+
+## 4. Tools and Technologies
+
+* ServiceNow platform
+* Access Control List (ACL)
+* Server-side scripting
+* JavaScript
+* Web browser
+* GitHub for project files and documentation
+* Google Drive for the demo video
+
+## 5. Project Timeline
+
+| Week   | Activity                                        |
+| ------ | ----------------------------------------------- |
+| Week 1 | Problem identification and requirement analysis |
+| Week 2 | System design and planning                      |
+| Week 3 | ACL and script development                      |
+| Week 4 | Testing and debugging                           |
+| Week 5 | Documentation and final demonstration           |
+
+## 6. Deliverables
+
+The project will produce:
+
+1. Working ACL configuration
+2. Access-control script
+3. Test results
+4. Screenshots
+5. Project documentation
+6. Public GitHub repository
+7. Project demonstration video
+
+## 7. Success Criteria
+
+The project will be considered successful when:
+
+* Authorized users can access the required records.
+* Unauthorized users are prevented from accessing restricted records.
+* The ACL script correctly evaluates the selected field value.
+* The complete workflow works as expected during testing.
