@@ -1,0 +1,99 @@
+# Phase 7 – Project Documentation
+
+## Project Title
+
+**Script-Controlled ACL – Restrict Record Access Based on Field Value**
+
+## 1. Introduction
+
+Access control is an important part of application security. Different users may require access to different records depending on their department, role, or other field values.
+
+This project uses a Script-Controlled Access Control List (ACL) to control record access based on a specified field value.
+
+## 2. Problem Statement
+
+Providing unrestricted access to records can expose information to unauthorized users. Therefore, a mechanism is required to restrict record access according to predefined conditions.
+
+## 3. Proposed Solution
+
+The project uses an ACL with a server-side script. The script checks the required field value and verifies whether the current user is authorized to access the record.
+
+If the condition is satisfied, access is allowed. Otherwise, access is denied.
+
+## 4. Technologies Used
+
+* ServiceNow
+* Access Control List (ACL)
+* JavaScript
+* Server-side scripting
+* GitHub
+* Google Drive
+
+## 5. System Workflow
+
+**User Request**
+↓
+**ACL Triggered**
+↓
+**Identify Current User**
+↓
+**Read Record Field Value**
+↓
+**Validate Authorization**
+↓
+**Condition Satisfied?**
+↙️ Yes             ↘️ No
+**Allow Access**    **Deny Access**
+
+## 6. Implementation
+
+The ACL is configured for the required record/table. A server-side script is used to compare the record's field value with the user's authorization.
+
+The implementation should be supported with screenshots showing:
+
+1. Table/record configuration
+2. Field configuration
+3. ACL configuration
+4. Script configuration
+5. User authorization
+6. Successful authorized access
+7. Restricted unauthorized access
+
+## 7. Testing Summary
+
+The system was tested using users with different authorization conditions. Authorized users were able to access the appropriate records, while unauthorized users were restricted.
+
+## 8. Benefits
+
+* Improves record-level security
+* Prevents unauthorized access
+* Provides automatic access control
+* Uses field values to determine access
+* Helps protect sensitive organizational information
+* Makes access rules easier to manage
+
+## 9. Limitations
+
+* The access logic depends on correctly configured user information and field values.
+* Incorrect ACL configuration may result in unexpected access behavior.
+* Changes to the data structure may require updates to the script.
+
+## 10. Future Enhancements
+
+The system can be enhanced by:
+
+* Supporting multiple access conditions
+* Adding more complex authorization rules
+* Providing better access-control reporting
+* Extending the solution to additional tables
+* Adding automated testing for ACL rules
+
+## 11. Conclusion
+
+The Script-Controlled ACL project provides a method for restricting record access based on field values. By combining ACL configuration with server-side scripting, the system can distinguish between authorized and unauthorized users and control access accordingly.
+
+The project demonstrates how field-based access control can be used to improve the security of records in an organizational system.
+
+## 12. Project Evidence
+
+The final documentation should include screenshots of the development, configuration, testing, and final output. These screenshots provide evidence that the project was implemented and tested successfully.
