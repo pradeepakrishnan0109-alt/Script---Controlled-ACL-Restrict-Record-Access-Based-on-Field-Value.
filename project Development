@@ -1,0 +1,92 @@
+# Phase 5 – Project Development
+
+## Project Title
+
+**Script-Controlled ACL – Restrict Record Access Based on Field Value**
+
+## 1. Development Overview
+
+The project is developed using an Access Control List (ACL) and a server-side script. The script checks a selected field value in the record and determines whether the current user is authorized to access the record.
+
+## 2. Development Steps
+
+### Step 1 – Create or Select the Required Table
+
+A suitable table is selected or created to store the records that need access control.
+
+Example fields:
+
+* Record Name
+* Department
+* Description
+* Assigned User
+
+### Step 2 – Configure the Field
+
+The **Department** field is used as the field value for access control.
+
+Example:
+
+* HR
+* Finance
+* IT
+* Sales
+
+### Step 3 – Create the ACL
+
+An ACL is configured for the required table and operation, such as **Read**.
+
+The ACL determines whether a user can access a record.
+
+### Step 4 – Add the Access-Control Script
+
+A server-side script is added to the ACL to check the record's field value and the current user's authorization.
+
+### Step 5 – Implement the Access Logic
+
+The basic logic is:
+
+**Get Current User → Read Record Field → Check Authorization → Allow/Deny Access**
+
+### Step 6 – Test the Configuration
+
+Different users are used to verify the access behavior.
+
+Example:
+
+| User   | Department | Record Department | Result         |
+| ------ | ---------- | ----------------- | -------------- |
+| User A | HR         | HR                | Access Allowed |
+| User B | Finance    | HR                | Access Denied  |
+| User C | Finance    | Finance           | Access Allowed |
+| User D | IT         | Finance           | Access Denied  |
+
+## 3. Development Logic
+
+The ACL script should follow this general logic:
+
+```text
+IF current user is authorized
+    AND record field value matches the user's authorization
+THEN
+    Allow access
+ELSE
+    Deny access
+```
+
+## 4. Development Result
+
+After implementation, the ACL should automatically evaluate the configured field value whenever a user attempts to access a protected record.
+
+Authorized users can access the appropriate records, while unauthorized users are restricted.
+
+## 5. Development Deliverables
+
+The development phase should contain:
+
+* ACL configuration
+* Access-control script
+* Required table/field configuration
+* User and role configuration
+* Screenshots of the implementation
+* Initial testing results
