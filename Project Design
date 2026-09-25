@@ -1,0 +1,68 @@
+# Phase 3 – Project Design
+
+## Project Title
+
+**Script-Controlled ACL – Restrict Record Access Based on Field Value**
+
+## 1. System Design
+
+The system uses an Access Control List (ACL) with a script to control access to records. The script checks a selected field value and compares it with the current user's authorization.
+
+### Basic Flow
+
+**User → Request Record → ACL Check → Script Validation → Field Value Check → Access Decision**
+
+## 2. Working Process
+
+1. The user requests access to a record.
+2. The ACL is triggered.
+3. The system identifies the current user.
+4. The script reads the required field value from the record.
+5. The script checks whether the user is authorized for that field value.
+6. If the condition is satisfied, access is **Allowed**.
+7. If the condition is not satisfied, access is **Denied**.
+
+## 3. Access Control Design
+
+| Record Field Value | Authorized User  | Access  |
+| ------------------ | ---------------- | ------- |
+| HR                 | HR User          | Allowed |
+| HR                 | Non-HR User      | Denied  |
+| Finance            | Finance User     | Allowed |
+| Finance            | Non-Finance User | Denied  |
+
+## 4. System Components
+
+The project consists of:
+
+* User Account
+* Record/Table
+* Field Value
+* Access Control List (ACL)
+* Access Control Script
+* Authorization Rules
+* Access Result
+
+## 5. Flowchart
+
+**Start**
+↓
+**User Requests Record**
+↓
+**ACL is Triggered**
+↓
+**Identify Current User**
+↓
+**Read Record Field Value**
+↓
+**Check Authorization**
+↓
+**Condition Satisfied?**
+↙️ **Yes**             ↘️ **No**
+**Allow Access**     **Deny Access**
+↘️                        ↙️
+**End**
+
+## 6. Expected Design Outcome
+
+The designed system should provide record-level access control by validating the field value against the user's authorization before allowing access.
